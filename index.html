@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Manchester United</title>
+		<link rel="stylesheet" href="unitedStyle.css"/>
+		<script src="unitedScript.js"></script>
+		<link rel="shortcut icon" href="Images/logo.png"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+	</head>
+
+	<body>
+
+		<!--Header-->
+		<header>
+			<input type="checkbox" id="checkbox">
+
+			<a href="index.html"><img src="Images/logo.png" alt="logo" id="logo"></a>
+
+			<label for="checkbox" id="menu-icon">
+				<i class="fa fa-bars"></i>
+			</label>
+
+			<!--Menu-->
+			<nav id="menu">
+				<div class="container container-controls">
+					<label for="checkbox" class="controls" id="close-button"><i class="fa fa-times"></i></label>
+				</div>
+
+				<a href="index.html"><i class="fa fa-home"></i> Home</a>
+				<a href="history.html"><i class="fa fa-history"></i> History</a>
+				<a href="squad.html"><i class="fa fa-users"></i> Squad</a>
+				<a href="fixtures.html"><i class="fa fa-calendar"></i> Fixtures</a>
+				<a href="chatBoard.html"><i class="fa fa-commenting-o"></i> Chatboard</a>
+
+				<!--Social Media Links-->
+				<div class="container" id="social-media-container">
+					<a href="https://www.facebook.com/manchesterunited/" target="blank"><i class="fa fa-facebook-square"></i> <span>facebook</span></a>
+					<a href="https://www.instagram.com/manchesterunited/?hl=en" target="blank"><i class="fa fa-instagram"></i> <span>instagram</span></a>
+					<a href="https://twitter.com/ManUtd?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank"><i class="fa fa-twitter"></i> <span>twitter</span></a>
+					<a href="https://www.youtube.com/channel/UC6yW44UGJJBvYTlfC7CRg2Q" target="blank"><i class="fa fa-youtube-play"></i> <span>youtube</span></a>
+				</div>
+			</nav>
+		</header>
+
+		<!--Main Page Content-->
+		<main>
+			<div class="container">
+				<div class="container container-content" id="home-container">
+
+					<!--Page Links Container-->
+					<div class="container" id="page-links-container">
+						<div class="container container-content">
+							<a href="history.html" class="card card-page" style="background-image: url(Images/Home/Page-Cards/history.jpg)">
+								<div class="card-body">
+									<h1>history</h1>
+									<p>Discover the history overtime throughout this club</p>
+								</div>
+							</a>
+							
+							<a href="squad.html" class="card card-page" style="background-image: url(Images/Home/Page-Cards/squad.jpeg)">
+								<div class="card-body">
+									<h1>squad</h1>
+									<p>Discover the members involved throughout this club's squad</p>
+								</div>
+							</a>
+							
+							<a href="fixtures.html" class="card card-page" style="background-image: url(Images/Home/Page-Cards/fixtures.jpeg)">
+								<div class="card-body">
+									<h1>fixtures</h1>
+									<p>Follow the club's schedule and their upcoming fixtures</p>
+								</div>
+							</a>
+							
+							<a href="chatBoard.html" class="card card-page" style="background-image: url(Images/Home/Page-Cards/chatroom.jpeg)">
+								<div class="card-body">
+									<h1>chatboard</h1>
+									<p>Speak to others on your views of the club and in general</p>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<!--News Container-->
+					<div class="container" id="news-container">
+						<h1 class="section-title">news</h1>
+						
+						<div class="container container-content">
+							<a href="#" class="card card-news" id="view-more-news-link" onclick="maintenanceAlert()">
+								<div class="card-body">
+									<h1>View More</h1>
+								</div>
+							</a>
+
+							<a href="#" class="card card-news" style="background-image: url(Images/Home/News/pogba-ban.jpeg)" onclick="maintenanceAlert()">
+								<div class="card-body">
+									<h1>Pogba Positive On Match Ban</h1>
+								</div>
+							</a>
+
+							<a href="#" class="card card-news" style="background-image: url(Images/Home/News/fa-cup-3rd-round.jpeg)" onclick="maintenanceAlert()">
+								<div class="card-body">
+									<h1>Man Utd vs Derby In FA Cup 3rd Round</h1>
+								</div>
+							</a>
+
+							<a href="#" class="card card-news" style="background-image: url(Images/Home/News/history-making-moment.jpeg)" onclick="maintenanceAlert()">
+								<div class="card-body">
+									<h1>Man Utd Create History Moment</h1>
+								</div>
+							</a>
+
+							<a href="#" class="card card-news" style="background-image: url(Images/Home/News/aliou-traore-signing.jpeg)" onclick="maintenanceAlert()">
+								<div class="card-body">
+									<h1>Man Utd Sign Aliou Traore</h1>
+								</div>
+							</a>
+
+							<a href="#" class="card card-news" style="background-image: url(Images/Home/News/club-duo-considered.jpeg)" onclick="maintenanceAlert()">
+								<div class="card-body">
+									<h1>Duo Considered Ahead Of Derby</h1>
+								</div>
+							</a>
+
+							<a href="#" class="card card-news" style="background-image: url(Images/Home/News/club-u23-players.jpeg)" onclick="maintenanceAlert()">
+								<div class="card-body">
+									<h1>Man Utd U23 Squad Beat Celtic 2-0</h1>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!--Footer-->
+		<footer>
+			<span id="disclaimer" onclick="viewDisclaimer()">disclaimer</span>
+		</footer>
+
+	</body>
+</html>

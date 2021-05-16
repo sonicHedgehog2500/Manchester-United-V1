@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Squad</title>
+		<link rel="stylesheet" href="unitedStyle.css"/>
+		<script src="unitedScript.js"></script>
+		<link rel="shortcut icon" href="Images/logo.png"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+	</head>
+
+	<body>
+
+		<!--Header-->
+		<header>
+			<input type="checkbox" id="checkbox">
+
+			<a href="index.html"><img src="Images/logo.png" alt="logo" id="logo"></a>
+
+			<label for="checkbox" id="menu-icon">
+				<i class="fa fa-bars"></i>
+			</label>
+
+			<!--Menu-->
+			<nav id="menu">
+				<div class="container container-controls">
+					<label for="checkbox" class="controls" id="close-button"><i class="fa fa-times"></i></label>
+				</div>
+
+				<a href="index.html"><i class="fa fa-home"></i> Home</a>
+				<a href="history.html"><i class="fa fa-history"></i> History</a>
+				<a href="squad.html"><i class="fa fa-users"></i> Squad</a>
+				<a href="fixtures.html"><i class="fa fa-calendar"></i> Fixtures</a>
+				<a href="chatBoard.html"><i class="fa fa-commenting-o"></i> Chatboard</a>
+
+				<!--Social Media Links-->
+				<div class="container" id="social-media-container">
+					<a href="https://www.facebook.com/manchesterunited/" target="blank"><i class="fa fa-facebook-square"></i> <span>facebook</span></a>
+					<a href="https://www.instagram.com/manchesterunited/?hl=en" target="blank"><i class="fa fa-instagram"></i> <span>instagram</span></a>
+					<a href="https://twitter.com/ManUtd?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank"><i class="fa fa-twitter"></i> <span>twitter</span></a>
+					<a href="https://www.youtube.com/channel/UC6yW44UGJJBvYTlfC7CRg2Q" target="blank"><i class="fa fa-youtube-play"></i> <span>youtube</span></a>
+				</div>
+			</nav>
+		</header>
+
+		<!--Main Page Content-->
+		<main>
+			<div class="container">
+				<div class="container container-content" id="squad-container">
+
+					<!--Containers With Modal Links For Each Squad Member-->
+
+						<!--Managers Container-->
+						<div class="container">
+							<h1 class="section-title">managers</h1>
+
+							<div class="container container-content" id="managers-container">
+								<a href="#" class="card card-squad modal-link" style="background-image: url(Images/Squad/Managers/ferguson.png);" onclick="maintenanceAlert()">
+									<div class="card-body">
+										<h1>ferguson</h1>
+									</div>
+								</a>
+
+								<a href="#" class="card card-squad modal-link" style="background-image: url(Images/Squad/Managers/mourinho.png);" onclick="maintenanceAlert()">
+									<div class="card-body">
+										<h1>mourinho</h1>
+									</div>
+								</a>
+
+								<a href="#" class="card card-squad modal-link" style="background-image: url(Images/Squad/Managers/van-gaal.png);" onclick="maintenanceAlert()">
+									<div class="card-body">
+										<h1>van gaal</h1>
+									</div>
+								</a>
+
+								<a href="#" class="card card-squad modal-link" style="background-image: url(Images/Squad/Managers/moyes.png);" onclick="maintenanceAlert()">
+									<div class="card-body">
+										<h1>moyes</h1>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<!--Goalkeepers Container-->
+						<div class="container">
+							<h1 class="section-title">goalkeepers</h1>
+
+							<div class="container container-content" id="goalkeepers-container">
+								<a href="#de-gea-modal" class="card card-squad modal-link" style="background-image: url(Images/Squad/Goalkeepers/de-gea.png);">
+									<div class="card-body">
+										<h1>de gea</h1>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<!--Defenders Container-->
+						<div class="container">
+							<h1 class="section-title">defenders</h1>
+
+							<div class="container container-content" id="defenders-container">
+								<a href="#lindelof-modal" class="card card-squad modal-link" style="background-image: url(Images/Squad/Defenders/lindelof.png);">
+									<div class="card-body">
+										<h1>lindelof</h1>
+									</div>
+								</a>
+
+								<a href="#rojo-modal" class="card card-squad modal-link" style="background-image: url(Images/Squad/Defenders/rojo.png);">
+									<div class="card-body">
+										<h1>rojo</h1>
+									</div>
+								</a>
+
+								<a href="#smalling-modal" class="card card-squad modal-link" style="background-image: url(Images/Squad/Defenders/smalling.png);">
+									<div class="card-body">
+										<h1>smalling</h1>
+									</div>
+								</a>
+
+								<a href="#valencia-modal" class="card card-squad modal-link" style="background-image: url(Images/Squad/Defenders/valencia.png);">
+									<div class="card-body">
+										<h1>valencia</h1>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<!--Midfielders Container-->
+						<div class="container">
+							<h1 class="section-title">midfielders</h1>
+
+							<div class="container container-content" id="midfielders-container">
+								<a href="#pogba-modal" class="card card-squad modal-link" style="background-image: url(Images/Squad/Midfielders/pogba.png);">
+									<div class="card-body">
+										<h1>pogba</h1>
+									</div>
+								</a>
+
+								<a href="#lingard-modal" class="card card-squad modal-link" style="background-image: url(Images/Squad/Midfielders/lingard.png);">
+									<div class="card-body">
+										<h1>lingard</h1>
+									</div>
+								</a>
+
+								<a href="#young-modal" class="card card-squad modal-link" style="background-image: url(Images/Squad/Midfielders/young.png);">
+									<div class="card-body">
+										<h1>young</h1>
+									</div>
+								</a>
+
+								<a href="#matic-modal" class="card card-squad modal-link" style="background-image: url(Images/Squad/Midfielders/matic.png);">
+									<div class="card-body">
+										<h1>matic</h1>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<!--Forwards Container-->
+						<div class="container">
+							<h1 class="section-title">forwards</h1>
+
+							<div class="container container-content" id="forwards-container">
+								<a href="#lukaku-modal" class="card card-squad modal-link" style="background-image: url(Images/Squad/Forwards/lukaku.png);">
+									<div class="card-body">
+										<h1>lukaku</h1>
+									</div>
+								</a>
+
+								<a href="#martial-modal" class="card card-squad modal-link" style="background-image: url(Images/Squad/Forwards/martial.png);">
+									<div class="card-body">
+										<h1>martial</h1>
+									</div>
+								</a>
+							</div>
+						</div>
+
+					<!--Modal Windows For Each Squad Memeber-->
+
+						<!--Managers Modal Windows-->
+
+						<!--Goalkeepers Modal Windows-->
+
+							<!--De Gea-->
+							<div class="modal-window modal-window-squad" id="de-gea-modal">
+								<header>
+									<h1>de gea</h1>
+									<a href="#modal-close" title="Close" class="controls"><i class="fa fa-times"></i></a>
+								</header>
+
+								<div class="container container-content">
+									<img src="Images/Squad/Goalkeepers/de-gea.png" alt="de-gea">
+
+									<div class="modal-window-text">
+										<p>
+											<label>Shirt Number: 1</label>
+											<label>Position: Goalkeeper</label>
+											<label>Appearances: 15</label>
+											<label>Saves: 53</label>
+											<label>Penalties Saved: 0</label>
+											<label>Punches: 2</label>
+											<label>High Claims: 10</label>
+											<label>Catches: 7</label>
+											<label>Sweeper Clearances: 4</label>
+											<label>Throw Outs: 39</label>
+											<label>Goal Kicks: 126</label>
+											<label>Clean Sheets: 9</label>
+											<label>Goals Conceded: 9</label>
+											<label>Passes: 403</label>
+											<label>Passes Per Match: 26.87</label>
+											<label>Accurate Long Balls: 126</label>
+										</p>
+									</div>
+								</div>
+							</div>
+
+						<!--Defenders Modal Windows-->
+
+							<!--Lindelof-->
+							<div class="modal-window modal-window-squad" id="lindelof-modal">
+								<header>
+									<h1>lindelof</h1>
+									<a href="#modal-close" title="Close" class="controls"><i class="fa fa-times"></i></a>
+								</header>
+
+								<div class="container container-content">
+									<img src="Images/Squad/Defenders/lindelof.png" alt="lindelof">
+
+									<div class="modal-window-text">
+										<p>
+											<label>Shirt Number: 2</label>
+											<label>Position: Defender</label>
+											<label>Clean Sheets: 1</label>
+											<label>Goals Conceded: 6</label>
+											<label>Tackles: 5</label>
+											<label>Tackle Success(%): 80</label>
+											<label>Interceptions: 4</label>
+											<label>Clearances: 23</label>
+											<label>Headed Clearances: 14</label>
+											<label>Aerial Battles Won: 7</label>
+											<label>Aerial Battles Lost: 13</label>
+											<label>Errors Leading To Goal: 1</label>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!--Rojo-->
+							<div class="modal-window modal-window-squad" id="rojo-modal">
+								<header>
+									<h1>rojo</h1>
+									<a href="#modal-close" title="Close" class="controls"><i class="fa fa-times"></i></a>
+								</header>
+
+								<div class="container container-content">
+									<img src="Images/Squad/Defenders/rojo.png" alt="rojo">
+
+									<div class="modal-window-text">
+										<p>
+											<label>Shirt Number: 5</label>
+											<label>Position: Defender</label>
+											<label>Clean Sheets: 0</label>
+											<label>Goals Conceded: 3</label>
+											<label>Tackles: 1</label>
+											<label>Tackle Success(%): 100</label>
+											<label>Interceptions: 2</label>
+											<label>Clearances: 23</label>
+											<label>Headed Clearances: 15</label>
+											<label>Aerial Battles Won: 3</label>
+											<label>Aerial Battles Lost: 1</label>
+											<label>Errors Leading To Goal: 0</label>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!--Smalling-->
+							<div class="modal-window modal-window-squad" id="smalling-modal">
+								<header>
+									<h1>smalling</h1>
+									<a href="#modal-close" title="Close" class="controls"><i class="fa fa-times"></i></a>
+								</header>
+
+								<div class="container container-content">
+									<img src="Images/Squad/Defenders/smalling.png" alt="smalling">
+
+									<div class="modal-window-text">
+										<p>
+											<label>Shirt Number: 12</label>
+											<label>Position: Defender</label>
+											<label>Clean Sheets: 4</label>
+											<label>Goals Conceded: 7</label>
+											<label>Tackles: 9</label>
+											<label>Tackle Success(%): 56</label>
+											<label>Interceptions: 15</label>
+											<label>Clearances: 53</label>
+											<label>Headed Clearances: 30</label>
+											<label>Aerial Battles Won: 30</label>
+											<label>Aerial Battles Lost: 8</label>
+											<label>Errors Leading To Goal: 0</label>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!--Valencia-->
+							<div class="modal-window modal-window-squad" id="valencia-modal">
+								<header>
+									<h1>valencia</h1>
+									<a href="#modal-close" title="Close" class="controls"><i class="fa fa-times"></i></a>
+								</header>
+
+								<div class="container container-content">
+									<img src="Images/Squad/Defenders/valencia.png" alt="valencia">
+
+									<div class="modal-window-text">
+										<p>
+											<label>Shirt Number: 25</label>
+											<label>Position: Defender</label>
+											<label>Clean Sheets: 9</label>
+											<label>Goals Conceded: 9</label>
+											<label>Tackles: 26</label>
+											<label>Tackle Success(%): 54</label>
+											<label>Interceptions: 15</label>
+											<label>Clearances: 37</label>
+											<label>Headed Clearances: 17</label>
+											<label>Aerial Battles Won: 12</label>
+											<label>Aerial Battles Lost: 19</label>
+											<label>Errors Leading To Goal: 0</label>
+										</p>
+									</div>
+								</div>
+							</div>
+
+						<!--Midfielders Modal Windows-->
+
+							<!--Pogba-->
+							<div class="modal-window modal-window-squad" id="pogba-modal">
+								<header>
+									<h1>pogba</h1>
+									<a href="#modal-close" title="Close" class="controls"><i class="fa fa-times"></i></a>
+								</header>
+
+								<div class="container container-content">
+									<img src="Images/Squad/Midfielders/pogba.png" alt="pogba">
+
+									<div class="modal-window-text">
+										<p>
+											<label>Shirt Number: 6</label>
+											<label>Position: Midfielder</label>
+											<label>Goals: 3</label>
+											<label>Goals Per Match: 0.38</label>
+											<label>Goals With Header: 0</label>
+											<label>Goals With Right Foot: 3</label>
+											<label>Goals With Left Foot: 0</label>
+											<label>Penalties Scored: 0</label>
+											<label>Goals From Freekick: 0</label>
+											<label>Shots: 24</label>
+											<label>Shots On Target: 7</label>
+											<label>Shooting Accuracy(%): 29</label>
+											<label>Assists: 5</label>
+											<label>Passes: 552</label>
+											<label>Passes Per Match: 69.0</label>
+											<label>Crosses: 13</label>
+											<label>Through Balls: 8</label>
+											<label>Accurate Long Balls: 33</label>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!--Lingard-->
+							<div class="modal-window modal-window-squad" id="lingard-modal">
+								<header>
+									<h1>lingard</h1>
+									<a href="#modal-close" title="Close" class="controls"><i class="fa fa-times"></i></a>
+								</header>
+
+								<div class="container container-content">
+									<img src="Images/Squad/Midfielders/lingard.png" alt="lingard">
+
+									<div class="modal-window-text">
+										<p>
+											<label>Shirt Number: 14</label>
+											<label>Position: Midfielder</label>
+											<label>Goals: 3</label>
+											<label>Goals Per Match: 0.27</label>
+											<label>Goals With Header: 0</label>
+											<label>Goals With Right Foot: 3</label>
+											<label>Goals With Left Foot: 0</label>
+											<label>Penalties Scored: 0</label>
+											<label>Goals From Freekick: 0</label>
+											<label>Shots: 12</label>
+											<label>Shots On Target: 6</label>
+											<label>Shooting Accuracy(%): 50</label>
+											<label>Assists: 3</label>
+											<label>Passes: 174</label>
+											<label>Passes Per Match: 15.82</label>
+											<label>Crosses: 14</label>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!--Young-->
+							<div class="modal-window modal-window-squad" id="young-modal">
+								<header>
+									<h1>young</h1>
+									<a href="#modal-close" title="Close" class="controls"><i class="fa fa-times"></i></a>
+								</header>
+
+								<div class="container container-content">
+									<img src="Images/Squad/Midfielders/young.png" alt="young">
+
+									<div class="modal-window-text">
+										<p>
+											<label>Shirt Number: 18</label>
+											<label>Position: Midfielder</label>
+											<label>Goals: 2</label>
+											<label>Goals Per Match: 0.18</label>
+											<label>Goals With Header: 0</label>
+											<label>Goals With Right Foot: 2</label>
+											<label>Goals With Left Foot: 0</label>
+											<label>Penalties Scored: 0</label>
+											<label>Goals From Freekick: 1</label>
+											<label>Shots: 12</label>
+											<label>Shots On Target: 3</label>
+											<label>Shooting Accuracy(%): 25</label>
+											<label>Assists: 2</label>
+											<label>Passes: 472</label>
+											<label>Passes Per Match: 42.91</label>
+											<label>Crosses: 45</label>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!--Matic-->
+							<div class="modal-window modal-window-squad" id="matic-modal">
+								<header>
+									<h1>matic</h1>
+									<a href="#modal-close" title="Close" class="controls"><i class="fa fa-times"></i></a>
+								</header>
+
+								<div class="container container-content">
+									<img src="Images/Squad/Midfielders/matic.png" alt="matic">
+
+									<div class="modal-window-text">
+										<p>
+											<label>Shirt Number: 31</label>
+											<label>Position: Midfielder</label>
+											<label>Goals: 0</label>
+											<label>Goals Per Match: 0.00</label>
+											<label>Goals With Header: 0</label>
+											<label>Goals With Right Foot: 2</label>
+											<label>Goals With Left Foot: 0</label>
+											<label>Penalties Scored: 0</label>
+											<label>Goals From Freekick: 0</label>
+											<label>Shots: 8</label>
+											<label>Shots On Target: 0</label>
+											<label>Shooting Accuracy(%): 0</label>
+											<label>Assists: 1</label>
+											<label>Passes: 1008</label>
+											<label>Passes Per Match: 67.20</label>
+											<label>Crosses: 12</label>
+										</p>
+									</div>
+								</div>
+							</div>
+
+						<!--Forwards Modal Windows-->
+
+							<!--Lukaku-->
+							<div class="modal-window modal-window-squad" id="lukaku-modal">
+								<header>
+									<h1>lukaku</h1>
+									<a href="#modal-close" title="Close" class="controls"><i class="fa fa-times"></i></a>
+								</header>
+
+								<div class="container container-content">
+									<img src="Images/Squad/Forwards/lukaku.png" alt="lukaku">
+
+									<div class="modal-window-text">
+										<p>
+											<label>Shirt Number: 9</label>
+											<label>Position: Forward</label>
+											<label>Goals: 8</label>
+											<label>Goals Per Match: 0.53</label>
+											<label>Goals With Header: 1</label>
+											<label>Goals With Right Foot: 2</label>
+											<label>Goals With Left Foot: 5</label>
+											<label>Penalties Scored: 0</label>
+											<label>Goals From Freekick: 0</label>
+											<label>Shots: 51</label>
+											<label>Shots On Target: 24</label>
+											<label>Shooting Accuracy(%): 47</label>
+											<label>Assists: 4</label>
+											<label>Passes: 326</label>
+											<label>Passes Per Match: 21.73</label>
+											<label>Crosses: 15</label>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!--Martial-->
+							<div class="modal-window modal-window-squad" id="martial-modal">
+								<header>
+									<h1>martial</h1>
+									<a href="#modal-close" title="Close" class="controls"><i class="fa fa-times"></i></a>
+								</header>
+
+								<div class="container container-content">
+									<img src="Images/Squad/Forwards/martial.png" alt="martial">
+
+									<div class="modal-window-text">
+										<p>
+											<label>Shirt Number: 11</label>
+											<label>Position: Forward</label>
+											<label>Goals: 6</label>
+											<label>Goals Per Match: 0.43</label>
+											<label>Goals With Header: 1</label>
+											<label>Goals With Right Foot: 4</label>
+											<label>Goals With Left Foot: 1</label>
+											<label>Penalties Scored: 1</label>
+											<label>Goals From Freekick: 0</label>
+											<label>Shots: 17</label>
+											<label>Shots On Target: 8</label>
+											<label>Shooting Accuracy(%): 47</label>
+											<label>Assists: 3</label>
+											<label>Passes: 248</label>
+											<label>Passes Per Match: 17.71</label>
+											<label>Crosses: 19</label>
+										</p>
+									</div>
+								</div>
+							</div>
+
+				</div>
+			</div>
+		</main>
+
+		<!--Footer-->
+		<footer>
+			<span id="disclaimer" onclick="viewDisclaimer()">disclaimer</span>
+		</footer>
+
+	</body>
+</html>
