@@ -1,0 +1,683 @@
+html, body{
+	background-color: black;
+	font-family: calibri;
+	text-align: justify;
+	line-height: 30px;
+	color: white;
+	margin: auto;
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+a, span, h1, th{
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: normal;
+	color: white;
+}
+
+button{
+	cursor: pointer;
+}
+
+input{
+	width: 20%;
+	margin: 10px 0px;
+	padding: 10px 5px;
+}
+
+#checkbox{
+	display: none;
+}
+
+/*****Table Styling*****/
+table{
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+	/*****Table Head Styling*****/
+	thead{
+		background-color: #b30000;
+	}
+
+		thead th{
+			padding: 5px 0px;
+		}
+
+	/*****Table Row Styling*****/
+	tr{
+		text-transform: capitalize;
+		border-bottom: 0.5px solid white;
+	}
+
+		tr td{
+			padding: 5px 0px;
+		}
+
+/*****Form Styling*****/
+form{
+	padding: 10px 0px;
+}
+
+	form textarea{
+		margin: 10px 0px;
+	}
+
+/*****Card Styling*****/
+.card{
+	max-width: 100%;
+	min-height: 300px;
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+
+/*****Slider Styling*****/
+.slider{
+	display: block;
+	overflow: hidden;
+	padding: 10px 5px;
+}
+
+	/*****Slider Item Styling*****/
+	.slider-item{
+		margin: 10px 10px;
+	}
+
+		/*****Slider Item Body Styling*****/
+		.slider-item .slider-item-body{
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+		}
+
+	/*****Horizontal Slider Styling*****/
+	.slider-horizontal{
+		overflow-x: scroll;
+	}
+
+		.slider-horizontal .container-slider{
+			display: block;
+			white-space: nowrap;
+		} 
+
+		.slider-horizontal .slider-item{
+			display: inline-block;
+		}
+
+/*****Tabular Content Styling*****/
+.tab-content{
+	display: none;
+}
+
+	/*****Tabular Content Image and Iframe Styling*****/
+	.tab-content img, .tab-content iframe{
+		width: 100%;
+		border: none;
+	}
+
+	/*****Tabular Content Text Styling*****/
+	.tab-content .tab-content-text{
+		padding: 0px 5px;
+	}
+
+	.tab-content:target{
+		display: grid;
+	}
+
+	.tab-content:target .container-content{
+		display: grid;
+	}
+
+/*****Modal Styling*****/
+
+	/*****Modal Link Styling*****/
+	.modal-link{
+		margin: 10px 0px;
+	}
+
+	/*****Modal Window Styling*****/
+	.modal-window{
+		height: 100vh;
+		position: fixed;
+		top: 0%;
+		left: -200%;
+		z-index: 1;
+		overflow-y: scroll;
+		transition: all 0.5s ease-in;
+		background-color: black;
+	}
+
+		/*****Modal Window Header Styling*****/
+		.modal-window header{
+			position: initial;
+			background-color: transparent;
+		}
+
+		/*****Modal Window Image Styling*****/
+		.modal-window .container-content img{
+			width: 100%;
+		}
+
+		/*****Modal Window Text Styling*****/
+		.modal-window-text p{
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.modal-window:target{
+			left: 0%;
+		}
+
+/*****Content Container Styling*****/
+.container-content{
+	display: grid;
+	grid-gap: 5px;
+}
+
+/*****Header Styling*****/
+ header{
+	width: 100%;
+	position: fixed;
+	top: 0%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1;
+	padding: 5px 0px;
+	background-color: #b30000;
+ }
+
+ 	/*****Logo Styling*****/
+	 header #logo{
+		max-width: 70px;
+		max-height: 70px;
+		width: auto;
+		height: auto;
+		margin: 0px 10px;
+	 }
+
+	 /*****Menu Styling*****/
+	 header #menu-icon{
+		margin: 0px 10px;
+	 }
+
+	 header #menu{
+		height: 100vh;
+		position: fixed;
+		top: 0%;
+		left: -100%;
+		z-index: 1;
+		overflow-x: hidden;
+		transition: all .5s ease-in-out;
+		padding-right: 20px;
+		background-color: rgba(0, 0, 0, 0.5);
+	 }
+
+	 	header #menu a{
+			display: block;
+			margin: 10px 0px;
+			padding: 5px 0px 5px 5px;
+		 }
+
+		 /*****Controls Container Styling*****/
+		 header #menu .container-controls{
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+		}
+
+			header #menu .container-controls .controls{
+				margin: 10px 10px;
+			}		
+
+		/*****Display Menu When The Icon Is Pressed*****/
+		#checkbox:checked ~ #menu{
+			left: 0%;
+		}
+
+	/*****Main Content Container Styling*****/
+	main{
+		overflow: auto;
+		min-height: 100%;
+		display: block;
+		margin-top: 90px;
+	}
+
+		/*****Homepage Styling*****/
+
+		/*****History Page Styling*****/
+
+		/*****Squad Page Styling*****/
+
+		/*****Fixtures Page Styling*****/
+
+		/*****Chatboard Page Styling*****/
+		#chatboard-messages{
+			min-height: 300px;
+			width: 100%;
+			height: auto;
+			overflow-y: scroll;
+			color: black;
+			background-color: white;
+		}
+
+			#chatboard-messages::before{
+				content: "sent messages will show here";
+			}
+
+	/*****Footer Styling*****/
+	footer{
+		position: relative;
+		clear: both;
+		display: flex;
+		align-items: center;
+		padding: 5px 0px;
+		background-color: #b30000;
+	}
+
+/**********************************************************************************************************************************Responsive Layout**********/
+
+/*******************************************************************************************************************Mobile Layout***************/
+@media only screen and (min-width: 320px){
+
+	input{
+		width: 100%;
+	}
+
+	/*****Card Styling*****/
+	.card{
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	/*****Tabular Content Styling*****/
+	.tab-content:target .container-content{
+		grid-template-columns: repeat(1, auto);
+	}
+
+	/*****Modal Styling*****/
+
+		/*****Modal Window Styling*****/
+		.modal-window{
+			width: 100%;
+		}
+
+			/*****Modal Window Content Container Styling*****/
+			.modal-window .container-content{
+				grid-template-columns: repeat(1, auto);
+			}
+
+	/*****Section Title Styling*****/
+	.section-title{
+		text-align: center;
+	}
+
+	/*****Content Container Styling*****/
+	.container-content{
+		grid-template-columns: repeat(1, auto);
+	}
+
+	/*****Header Styling*****/
+
+		/*****Menu Styling*****/
+		header #menu{
+			overflow-y: scroll;
+		}
+
+	/*****Footer Styling*****/
+	footer{
+		justify-content: center;
+	}
+
+}
+
+/*******************************************************************************************************************Tablet Layout***************/
+@media only screen and (min-width: 768px){
+
+	input{
+		width: 100%;
+	}
+
+	/*****Card Styling*****/
+	.card{
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	/*****Tabular Content Styling*****/
+	.tab-content:target .container-content{
+		grid-template-columns: repeat(1, auto);
+	}
+
+	/*****Modal Styling*****/
+
+		/*****Modal Window Styling*****/
+		.modal-window{
+			width: 100%;
+		}
+
+			/*****Modal Window Content Container Styling*****/
+			.modal-window .container-content{
+				grid-template-columns: repeat(1, auto);
+			}
+			
+				/*****Modal Window Image Styling*****/
+				.modal-window .container-content img{
+					height: 500px;
+				}
+
+	/*****Section Title Styling*****/
+	.section-title{
+		text-align: center;
+	}
+
+	/*****Header Styling*****/
+
+		/*****Menu Styling*****/
+		header #menu{
+			overflow-y: scroll;
+		}
+
+	/*****Footer Styling*****/
+	footer{
+		justify-content: center;
+	}
+
+}
+
+/*******************************************************************************************Laptop, Desktop & Large Screen Layout***************/
+@media only screen and (min-width: 992px){
+
+	input{
+		width: 100%;
+	}
+
+	/*****Card Styling*****/
+	.card{
+		justify-content: flex-end;
+		align-items: flex-end;
+		text-align: right;
+		transition: box-shadow 1s;
+	}
+
+		/*****Card Body Styling*****/
+		.card-body{
+			padding: 10px;
+			transition: color 1s;
+		}
+
+			.card-body h1{
+				transition: color 1s;
+			}
+
+		.card:hover{
+			box-shadow: inset 0 0 0 2000px rgb(255, 255, 255, 0);
+		}
+
+		.card:hover .card-body, .card:hover .card-body h1{
+			color: #b30000;
+		}
+
+	/*****Slider Styling*****/
+
+		/*****Slider Item Styling*****/
+		.slider-item{
+			transition: color 1s;
+		}
+
+			.slider-item span{
+				transition: color 1s;
+			}
+
+			.slider-item:hover{
+				color: #b30000;
+			}
+
+			.slider-item:hover span{
+				color: #b30000;
+			}
+
+	/*****Tabular Content Styling*****/
+	.tab-content .container-content{
+		padding: 10px;
+	}
+
+		/*****Tabular Content Image and Iframe Styling*****/
+		.tab-content img, .tab-content iframe{
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+
+	/*****Modal Styling*****/
+
+		/*****Modal Window Styling*****/
+		.modal-window{
+			width: 100%;
+		}
+
+			/*****Modal Window Header Styling*****/
+
+				/*****Modal Window Controls Styling*****/
+				.modal-window .controls{
+					transition: color 1s;
+				}
+
+					.modal-window .controls:hover{
+						color: black;
+					}
+
+			/*****Modal Window Content Container Styling*****/
+			.modal-window .container-content{
+				justify-content: space-around;
+			}
+
+	/*****Section Title Styling*****/
+	.section-title{
+		text-align: left;
+	}
+
+	/*****Header Styling*****/
+
+		/*****Menu Styling*****/
+		header #menu-icon{
+			transition: color 1s;
+		}
+
+			header #menu-icon:hover{
+				color: black;
+				cursor: pointer;
+			}
+
+		header #menu{
+			overflow: hidden;
+		}
+
+			header #menu a{
+				transition: color 1s;
+			}
+
+				header #menu a:hover{
+					color: #b30000;
+				}
+
+			/*****Controls Container Styling*****/
+			header #menu .container-controls .controls{
+				transition: color 1s;
+			}
+
+			header #menu .container-controls .controls:hover{
+				color: #b30000;
+				cursor: pointer;
+			}
+
+			/*****Social Media Links Styling*****/
+			header #menu #social-media-container{
+				width: 10.2vw;
+				position: absolute;
+				bottom: 0%;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				padding: 0px 5px
+			}
+
+				header #menu #social-media-container a{
+					margin: 0px 5px;
+				}
+
+					header #menu #social-media-container a span{
+						display: none;
+					}
+
+	/*****Main Content Container Styling*****/
+
+		/*****Homepage Styling*****/
+		#home-container{
+			grid-template-columns: repeat(2, auto);
+			padding: 10px;
+		}
+
+			/*****Page Links Container Styling*****/
+			#page-links-container .container-content{
+				grid-template-columns: repeat(2, auto);
+			}
+
+			/*****News Section Styling*****/
+			#news-container{
+				height: 605px;
+				overflow-y: scroll;
+			}
+
+				#news-container .section-title{
+					text-align: center;
+				}
+
+				#view-more-news-link{
+					justify-content: center;
+					align-items: center;
+				}
+
+		/*****History Page Styling*****/
+		#history-container{
+			grid-template-columns: repeat(1, auto);
+		}
+
+			/*****History Tab Menu Styling*****/
+			#history-tab-menu-container{
+				overflow-x: hidden;
+			}
+
+				#history-tab-menu{
+					display: flex;
+					justify-content: space-around;
+				}
+
+			/*****History Tab Content*****/
+			.tab-content-history:target .container-content{
+				grid-template-columns: repeat(2, auto);
+			}
+
+				.tab-content-history img, .tab-content-history iframe{
+					width: 550px;
+				}
+
+				/*****Achievements Tab Styling*****/
+				#achievements #achievements-content{
+					grid-template-columns: repeat(3, auto);
+				}
+
+					.card-achievements:hover{
+						box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+					}
+
+					.card-achievements:hover .card-body, .card-achievements:hover .card-body h1{
+						color: white;
+					}
+
+		/*****Squad Page Styling*****/
+		#squad-container{
+			grid-template-columns: repeat(1, auto);
+		}
+
+			#squad-container .container .container-content{
+				grid-template-columns: repeat(4, auto);
+			}
+
+			/*****Squad Modal Window Styling*****/
+			.modal-window-squad{
+				width: 30%;
+			}
+
+				/*****Squad Modal Window Content Container Styling*****/
+				.modal-window-squad .container-content{
+					grid-template-columns: repeat(1, auto);
+				}
+
+					/*****Squad Modal Window Image Styling*****/
+					.modal-window-squad .container-content img{
+						width: 100%;
+						height: 100%;
+					}
+
+		/*****Fixtures Page Styling*****/
+		#fixtures-container{
+			grid-template-columns: repeat(1, auto);
+			padding: 10px;
+		}
+
+			/*****Fixtures Search Bar Styling*****/
+			#fixtures-search-bar{
+				width: 20%;
+			}
+
+		/*****Chatboard Page Styling*****/
+		#chatboard-container{
+			grid-template-columns: repeat(1, auto);
+			padding: 10px;
+		}
+
+			/*****Chatboard Controls Styling*****/
+			#chatboard-controls{
+				grid-template-columns: repeat(2, auto);
+				padding: 5px 0px;
+			}
+
+				/*****Send Message Button Styling*****/
+				#send-message-button{
+					width: 50px;
+					border: none;
+					border-radius: 100%;
+					margin-left: 20px;
+				}
+
+	/*****Footer Styling*****/
+	footer{
+		justify-content: flex-end;
+	}
+
+		/*****Disclaimer Link Styling*****/
+		footer #disclaimer{
+			margin: 0px 10px;
+			transition: color 1s;
+		}
+
+			footer #disclaimer:hover{
+				color: black;
+				cursor: pointer;
+				font-weight: bold;
+			}
+
+}
